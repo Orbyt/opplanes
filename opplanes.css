@@ -1,0 +1,109 @@
+/* CSS declarations go here */
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+
+
+/* Global */
+body {
+	background: #1B1B24;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.top {
+	margin-top: 0px;
+	padding-top: 25px;
+}
+
+.middle {
+	margin-top: 25px; 
+}
+
+/* Buttons */
+
+
+button {
+	background: #FD0A54;
+}
+
+.button {
+	background: #FD0A54;
+}
+
+.button:hover {
+	background: #ccfc0a;
+}
+button:hover {
+	background: #ccfc0a;
+}
+.bottom {
+	position:fixed;
+    bottom:0px;
+    width:100%;
+}
+
+.icons {
+	width:72px; 
+    margin:0px auto;
+}
+
+.bottom span {
+	bottom: 0px;
+	position: absolute;
+	right: 0px;
+}
+
+.builtby {
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 10px;
+	letter-spacing: -1px;
+
+}
+.builtby a {
+	color: #FD0A54;
+}
+
+.fa {
+	color: #FD0A54;
+	font-size: 32px;
+}
+
+/* Title */
+.title {
+	color: #FD0A54;
+	/*font-weight: 900;*/
+	font-size: 64px;
+	font-family: 'Press Start 2P', cursive;
+}
+
+/* DIVIDER */
+.divider {
+	height: 400px;
+	width: 2px;
+	box-shadow: 2px 2px 8px black;
+	margin: 50px auto 0;
+}
+
+/* Stats Table */
+
+.stats {
+	list-style-type: none;
+
+}
+
+.stats li {
+	color: white;
+	-webkit-box-shadow: 0 4px 4px -2px black;
+   -moz-box-shadow: 0 4px 4px -2px black;
+        box-shadow: 0 4px 4px -2px black;
+   font-size:12px;
+}
+
+/* Compare colors */
+.better {
+	color: lime;
+}
+
+.worse {
+	color: red;
+}

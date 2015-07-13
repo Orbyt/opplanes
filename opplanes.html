@@ -1,0 +1,131 @@
+<head>
+  <title>opplanes</title>
+</head>
+
+<body>
+	<div id="video" style="width: 100%; height: 100%;">
+		{{> autocomplete}}
+		{{> top}}
+		{{> middle}}
+	 	{{> bottom}}
+ 	</div>
+</body>
+
+<template name="top">
+<!-- <div id="video" style="width: 100%; height: 100%;">
+ -->
+	<div class="row top">
+		<div class="small-4 small-centered columns">
+			{{> title}}
+		</div>
+	</div>
+	<!-- </div> -->
+</template>
+
+<template name="middle">
+	<div class="row middle">
+		<div class="small-5 columns">
+			{{> left}}
+		</div>
+		<div class="small-2 columns">
+			<div class="divider">
+			</div>
+		</div>
+		<div class="small-5 columns">
+			{{> right}}
+		</div>
+
+	</div>
+</template>
+
+<template name="bottom">
+	<div class="bottom">
+		<div class="icons">
+			<a href="https://twitter.com/orb_yt" class=""><i class="fa fa-twitter-square"></i></a>
+			<a href="https://github.com/Orbyt"><i class="fa fa-github-square"></i></a>
+		</div>
+		<span class="builtby">By <a href="https://github.com/Orbyt">orbyt</a> &amp; built with <a href="http://meteor.com">meteor</a></span>	
+	</div>
+</template>
+
+<template name="title">
+	<h1 class="title text-center">2 Op</h1>
+</template>
+
+<template name="left">
+	{{> search}}
+	{{> lefttable}}
+</template>
+
+<template name="right">
+	{{> search}}
+	{{> righttable}}
+</template>
+
+<template name="search">
+	<form id="searchform">
+		<div class="row collapse prefix-round">
+			<div class="small-3 columns">
+				<a href="#" class="button prefix" action="submit" form="searchform">Go</a>	          
+			</div>
+			<div class="small-9 columns">
+				<input type="text" name="search" id="search" placeholder="Fw_190_A-5/U2">
+			</div>
+		</div>
+    </form>
+</template>
+
+<template name="lefttable">
+	<div class="row">
+		<div class="medium-8 medium-centered columns">
+			<div class="image">
+				<img src="{{image}}">
+			</div>
+			<ul class="stats text-center">
+				<li><span>title: {{data.title}}</span></li>
+				<li><span>country: {{data.country}}</span></li>
+				<li><span class="{{compare.rank}}">rank: {{data.rank}}</span></li>
+				<li><span class="{{compare.rating}}">rating: {{data.rating}}</span></li>
+				<li><span class="{{compare.maxalt}}">maxalt: {{data.maxalt}}</span></li>
+				<li><span class="{{compare.speed}}">speed: {{data.speed}}</span></li>
+				<li><span class="{{compare.turn}}">turn: {{data.turn}}</span></li>
+				<li><span class="{{compare.climb}}">climb: {{data.climb}}</span></li>
+				<li><span class="{{compare.cost}}">cost: {{data.cost}}</span></li>
+			</ul>
+		</div>
+	</div>
+</template>
+
+<template name="righttable">
+	<div class="row">
+		<div class="medium-8 medium-centered columns">
+			<div class="image">
+				<img src="{{image}}">
+			</div>
+			<ul class="stats text-center">
+			    <li><span>title: {{data.title}}</span></li>
+				<li><span>country: {{data.country}}</span></li>
+				<li><span class="{{compare.rank}}">rank: {{data.rank}}</span></li>
+				<li><span class="{{compare.rating}}">rating: {{data.rating}}</span></li>
+				<li><span class="{{compare.maxalt}}">maxalt: {{data.maxalt}}</span></li>
+				<li><span class="{{compare.speed}}">speed: {{data.speed}}</span></li>
+				<li><span class="{{compare.turn}}">turn: {{data.turn}}</span></li>
+				<li><span class="{{compare.climb}}">climb: {{data.climb}}</span></li>
+				<li><span class="{{compare.cost}}">cost: {{data.cost}}</span></li>
+			</ul>
+		</div>
+	</div>
+</template>
+
+<template name="video">
+
+  <div id="video" style="width: 1000px; height: 500px;">
+  </div>
+</template>
+
+<template name="autocomplete">
+	<div id="project-label">Select a project (type "j" for a start):</div>
+	<input id="project">
+	<input type="hidden" id="project-id">
+	<p id="project-description"></p>
+</template>
